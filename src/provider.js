@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const Http = axios.create({
-    baseURL: " https://localhost:7032/api/ControlerTeste/",
+    baseURL: "https://teste54.azurewebsites.net/api/ControlerTeste",
 })

@@ -10,10 +10,11 @@ function App() {
   const [tarefas, setTarefas] = useState([]);
 
   const logar = async () => {
-   await Http.post("logar", {
+   await Http.post("/logar", {
       nome: nome,
       email: email
     }).then((res) => {
+		console.log(res);
       setUsuario(res.data);
       setTarefas(res.data.tarefas)
     })
